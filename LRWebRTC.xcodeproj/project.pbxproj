@@ -12,6 +12,8 @@
 		2C08F4C321F9AEA200A79F03 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C08F4C121F9AEA200A79F03 /* Main.storyboard */; };
 		2C08F4C521F9AEA400A79F03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C08F4C421F9AEA400A79F03 /* Assets.xcassets */; };
 		2C08F4C821F9AEA400A79F03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C08F4C621F9AEA400A79F03 /* LaunchScreen.storyboard */; };
+		2C08F4D021F9AEC200A79F03 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C08F4CF21F9AEC200A79F03 /* WebRTC.framework */; };
+		2C08F4D221F9B10C00A79F03 /* LRWebRTC.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2C08F4D121F9B10C00A79F03 /* LRWebRTC.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		2C08F4C421F9AEA400A79F03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C08F4C721F9AEA400A79F03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C08F4C921F9AEA400A79F03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C08F4CF21F9AEC200A79F03 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebRTC.framework; sourceTree = "<group>"; };
+		2C08F4D121F9B10C00A79F03 /* LRWebRTC.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LRWebRTC.podspec; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C08F4D021F9AEC200A79F03 /* WebRTC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +65,8 @@
 				2C08F4C421F9AEA400A79F03 /* Assets.xcassets */,
 				2C08F4C621F9AEA400A79F03 /* LaunchScreen.storyboard */,
 				2C08F4C921F9AEA400A79F03 /* Info.plist */,
+				2C08F4D121F9B10C00A79F03 /* LRWebRTC.podspec */,
+				2C08F4CF21F9AEC200A79F03 /* WebRTC.framework */,
 			);
 			path = LRWebRTC;
 			sourceTree = "<group>";
@@ -123,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C08F4C821F9AEA400A79F03 /* LaunchScreen.storyboard in Resources */,
+				2C08F4D221F9B10C00A79F03 /* LRWebRTC.podspec in Resources */,
 				2C08F4C521F9AEA400A79F03 /* Assets.xcassets in Resources */,
 				2C08F4C321F9AEA200A79F03 /* Main.storyboard in Resources */,
 			);
@@ -284,6 +292,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MP7R8DB55C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LRWebRTC",
+				);
 				INFOPLIST_FILE = LRWebRTC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +314,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = MP7R8DB55C;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/LRWebRTC",
+				);
 				INFOPLIST_FILE = LRWebRTC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
